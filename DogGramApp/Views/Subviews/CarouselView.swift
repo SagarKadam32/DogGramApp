@@ -8,30 +8,18 @@
 import SwiftUI
 
 struct CarouselView: View {
+    
+    @State var selection: Int = 1
     var body: some View {
-        TabView(selection: .constant(1)) {
-            
-            Image("dog1")
-                .resizable()
-                .scaledToFill()
-                .tag(0)
-            
-            Image("dog2")
-                .resizable()
-                .scaledToFill()
-                .tag(1)
-            
-            Image("dog3")
-                .resizable()
-                .scaledToFill()
-                .tag(3)
-            
-            Image("dog4")
-                .resizable()
-                .scaledToFill()
-                .tag(4)
-            
-        }
+        
+        TabView(selection: $selection, content: {
+            ForEach(1..<8) { count in
+                Image("dog\(count)")
+                    .resizable()
+                    .scaledToFill()
+                    .tag(count)
+            }
+        })
         .tabViewStyle(PageTabViewStyle())
         .frame(height:300)
     }
