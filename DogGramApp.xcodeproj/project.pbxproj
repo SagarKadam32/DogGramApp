@@ -15,6 +15,7 @@
 		969A0D7129A7E146003D2357 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7029A7E146003D2357 /* Extensions.swift */; };
 		969A0D7329A88776003D2357 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7229A88776003D2357 /* FeedView.swift */; };
 		969A0D7529A8882E003D2357 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7429A8882E003D2357 /* PostView.swift */; };
+		969A0D7829A8BFF2003D2357 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7729A8BFF2003D2357 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		969A0D7029A7E146003D2357 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		969A0D7229A88776003D2357 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		969A0D7429A8882E003D2357 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		969A0D7729A8BFF2003D2357 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +108,18 @@
 		969A0D6F29A7E106003D2357 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				969A0D7629A8BFE0003D2357 /* Model */,
 				969A0D7029A7E146003D2357 /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		969A0D7629A8BFE0003D2357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				969A0D7729A8BFF2003D2357 /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969A0D7329A88776003D2357 /* FeedView.swift in Sources */,
+				969A0D7829A8BFF2003D2357 /* PostModel.swift in Sources */,
 				9648C87329A7A1A2001E869B /* ContentView.swift in Sources */,
 				969A0D7129A7E146003D2357 /* Extensions.swift in Sources */,
 				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
