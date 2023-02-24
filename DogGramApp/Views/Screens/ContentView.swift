@@ -35,7 +35,7 @@ struct ContentView: View {
                     Text("Profile")
                 }
         }
-        .accentColor(.red)
+        .accentColor(Color.MyTheme.purpuleColor)
         
     }
 }
