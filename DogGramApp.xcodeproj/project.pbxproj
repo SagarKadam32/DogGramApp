@@ -13,6 +13,8 @@
 		9648C87829A7A1A3001E869B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9648C87729A7A1A3001E869B /* Preview Assets.xcassets */; };
 		9648C87F29A7AD7D001E869B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9648C87E29A7AD7D001E869B /* LaunchScreen.storyboard */; };
 		969A0D7129A7E146003D2357 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7029A7E146003D2357 /* Extensions.swift */; };
+		969A0D7329A88776003D2357 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7229A88776003D2357 /* FeedView.swift */; };
+		969A0D7529A8882E003D2357 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7429A8882E003D2357 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9648C87729A7A1A3001E869B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9648C87E29A7AD7D001E869B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		969A0D7029A7E146003D2357 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		969A0D7229A88776003D2357 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		969A0D7429A8882E003D2357 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		969A0D6D29A7DFD8003D2357 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				969A0D7429A8882E003D2357 /* PostView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			children = (
 				9648C87029A7A1A2001E869B /* DogGramAppApp.swift */,
 				9648C87229A7A1A2001E869B /* ContentView.swift */,
+				969A0D7229A88776003D2357 /* FeedView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -176,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969A0D7329A88776003D2357 /* FeedView.swift in Sources */,
 				9648C87329A7A1A2001E869B /* ContentView.swift in Sources */,
 				969A0D7129A7E146003D2357 /* Extensions.swift in Sources */,
+				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
 				9648C87129A7A1A2001E869B /* DogGramAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
