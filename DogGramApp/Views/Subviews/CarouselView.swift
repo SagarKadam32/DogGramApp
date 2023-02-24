@@ -10,21 +10,30 @@ import SwiftUI
 struct CarouselView: View {
     var body: some View {
         TabView(selection: .constant(1)) {
-            Text("Tab-1")
-                .tabItem {
-                    Text("Tab 1")
-                }
+            
+            Image("dog1")
+                .resizable()
+                .scaledToFill()
+                .tag(0)
+            
+            Image("dog2")
+                .resizable()
+                .scaledToFill()
                 .tag(1)
             
-            Text("Tab-2")
-                .tabItem {
-                    Text("Tab 2")
-                }
-                .tag(2)
+            Image("dog3")
+                .resizable()
+                .scaledToFill()
+                .tag(3)
+            
+            Image("dog4")
+                .resizable()
+                .scaledToFill()
+                .tag(4)
             
         }
         .tabViewStyle(PageTabViewStyle())
-        .background(Color.red)
+        .frame(height:300)
     }
 }
 
