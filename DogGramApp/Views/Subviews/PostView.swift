@@ -12,7 +12,7 @@ struct PostView: View {
     @State var post: PostModel
      
     var body: some View {
-        VStack(alignment: .center, spacing: 0) {
+        VStack(alignment: .leading, spacing: 0) {
             
             // MARK: HEADER
             HStack {
@@ -44,8 +44,15 @@ struct PostView: View {
                 Image(systemName: "heart")
                     .font(.title3)
                 
-                Image(systemName: "bubble.middle.bottom")
-                    .font(.title3)
+                NavigationLink(destination: {
+                    CommentsView()
+                },
+                               label: {
+                    Image(systemName: "bubble.middle.bottom")
+                        .font(.title3)
+                        .foregroundColor(.primary)
+                })
+
                 
                 Image(systemName: "paperplane")
                     .font(.title3)
