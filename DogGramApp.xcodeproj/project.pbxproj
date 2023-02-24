@@ -16,6 +16,7 @@
 		969A0D7329A88776003D2357 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7229A88776003D2357 /* FeedView.swift */; };
 		969A0D7529A8882E003D2357 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7429A8882E003D2357 /* PostView.swift */; };
 		969A0D7829A8BFF2003D2357 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7729A8BFF2003D2357 /* PostModel.swift */; };
+		969A0D7A29A8C206003D2357 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7929A8C206003D2357 /* PostArrayObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		969A0D7229A88776003D2357 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		969A0D7429A8882E003D2357 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		969A0D7729A8BFF2003D2357 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		969A0D7929A8C206003D2357 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				969A0D7729A8BFF2003D2357 /* PostModel.swift */,
+				969A0D7929A8C206003D2357 /* PostArrayObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				969A0D7829A8BFF2003D2357 /* PostModel.swift in Sources */,
 				9648C87329A7A1A2001E869B /* ContentView.swift in Sources */,
 				969A0D7129A7E146003D2357 /* Extensions.swift in Sources */,
+				969A0D7A29A8C206003D2357 /* PostArrayObject.swift in Sources */,
 				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
 				9648C87129A7A1A2001E869B /* DogGramAppApp.swift in Sources */,
 			);
