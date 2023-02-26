@@ -25,6 +25,7 @@
 		96A7092F29AB31E600CED8B0 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7092E29AB31E600CED8B0 /* ImageGridView.swift */; };
 		96A7093129AB3CD900CED8B0 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093029AB3CD900CED8B0 /* UploadView.swift */; };
 		96A7093329AB496B00CED8B0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093229AB496B00CED8B0 /* ImagePicker.swift */; };
+		96A7093529AB6DEC00CED8B0 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093429AB6DEC00CED8B0 /* PostImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		96A7092E29AB31E600CED8B0 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		96A7093029AB3CD900CED8B0 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		96A7093229AB496B00CED8B0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		96A7093429AB6DEC00CED8B0 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				969A0D7B29A8C926003D2357 /* CommentsView.swift */,
 				969A0D8129A8E5D5003D2357 /* BrowseView.swift */,
 				96A7093029AB3CD900CED8B0 /* UploadView.swift */,
+				96A7093429AB6DEC00CED8B0 /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				969A0D7329A88776003D2357 /* FeedView.swift in Sources */,
 				969A0D7829A8BFF2003D2357 /* PostModel.swift in Sources */,
+				96A7093529AB6DEC00CED8B0 /* PostImageView.swift in Sources */,
 				9648C87329A7A1A2001E869B /* ContentView.swift in Sources */,
 				969A0D7E29A8D724003D2357 /* MessageView.swift in Sources */,
 				969A0D7129A7E146003D2357 /* Extensions.swift in Sources */,
