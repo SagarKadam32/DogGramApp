@@ -15,7 +15,7 @@ struct FeedView: View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVStack {
                 ForEach(post.dataArray, id: \.self) { post in
-                    PostView(post: post)
+                    PostView(post: post, showHeaderAndFooter: true)
                 }
             }
         }

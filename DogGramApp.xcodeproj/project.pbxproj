@@ -22,6 +22,7 @@
 		969A0D8029A8DBD5003D2357 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D7F29A8DBD5003D2357 /* CommentModel.swift */; };
 		969A0D8229A8E5D5003D2357 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D8129A8E5D5003D2357 /* BrowseView.swift */; };
 		969A0D8429A8E69A003D2357 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A0D8329A8E69A003D2357 /* CarouselView.swift */; };
+		96A7092F29AB31E600CED8B0 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7092E29AB31E600CED8B0 /* ImageGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		969A0D7F29A8DBD5003D2357 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		969A0D8129A8E5D5003D2357 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		969A0D8329A8E69A003D2357 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		96A7092E29AB31E600CED8B0 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				969A0D7429A8882E003D2357 /* PostView.swift */,
 				969A0D7D29A8D724003D2357 /* MessageView.swift */,
 				969A0D8329A8E69A003D2357 /* CarouselView.swift */,
+				96A7092E29AB31E600CED8B0 /* ImageGridView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				969A0D7E29A8D724003D2357 /* MessageView.swift in Sources */,
 				969A0D7129A7E146003D2357 /* Extensions.swift in Sources */,
 				969A0D7A29A8C206003D2357 /* PostArrayObject.swift in Sources */,
+				96A7092F29AB31E600CED8B0 /* ImageGridView.swift in Sources */,
 				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
 				969A0D8229A8E5D5003D2357 /* BrowseView.swift in Sources */,
 				969A0D8029A8DBD5003D2357 /* CommentModel.swift in Sources */,
