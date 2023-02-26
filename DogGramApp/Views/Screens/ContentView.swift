@@ -12,7 +12,7 @@ struct ContentView: View {
     
         TabView {
             NavigationView {
-                FeedView(post: PostArrayObject())
+                FeedView(post: PostArrayObject(), title: "Feed View")
             }.tabItem {
                 Image(systemName: "book.fill")
                 Text("Feed")

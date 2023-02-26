@@ -10,6 +10,7 @@ import SwiftUI
 struct FeedView: View {
     
     @ObservedObject var post : PostArrayObject
+    var title: String
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -19,7 +20,7 @@ struct FeedView: View {
                 }
             }
         }
-        .navigationBarTitle("FEED VIEW")
+        .navigationBarTitle(title)
         .navigationBarTitleDisplayMode(.inline)
 
     }
@@ -28,7 +29,7 @@ struct FeedView: View {
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            FeedView(post: PostArrayObject())
+            FeedView(post: PostArrayObject(), title: "Feed View")
         }
     }
 }
