@@ -26,6 +26,8 @@
 		96A7093129AB3CD900CED8B0 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093029AB3CD900CED8B0 /* UploadView.swift */; };
 		96A7093329AB496B00CED8B0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093229AB496B00CED8B0 /* ImagePicker.swift */; };
 		96A7093529AB6DEC00CED8B0 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093429AB6DEC00CED8B0 /* PostImageView.swift */; };
+		96A7093729ABB1AF00CED8B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093629ABB1AF00CED8B0 /* ProfileView.swift */; };
+		96A7093929ABB49900CED8B0 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093829ABB49900CED8B0 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		96A7093029AB3CD900CED8B0 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		96A7093229AB496B00CED8B0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		96A7093429AB6DEC00CED8B0 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
+		96A7093629ABB1AF00CED8B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		96A7093829ABB49900CED8B0 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				969A0D8329A8E69A003D2357 /* CarouselView.swift */,
 				96A7092E29AB31E600CED8B0 /* ImageGridView.swift */,
 				96A7093229AB496B00CED8B0 /* ImagePicker.swift */,
+				96A7093829ABB49900CED8B0 /* ProfileHeaderView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				969A0D8129A8E5D5003D2357 /* BrowseView.swift */,
 				96A7093029AB3CD900CED8B0 /* UploadView.swift */,
 				96A7093429AB6DEC00CED8B0 /* PostImageView.swift */,
+				96A7093629ABB1AF00CED8B0 /* ProfileView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -232,9 +238,11 @@
 				969A0D7A29A8C206003D2357 /* PostArrayObject.swift in Sources */,
 				96A7092F29AB31E600CED8B0 /* ImageGridView.swift in Sources */,
 				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
+				96A7093729ABB1AF00CED8B0 /* ProfileView.swift in Sources */,
 				969A0D8229A8E5D5003D2357 /* BrowseView.swift in Sources */,
 				969A0D8029A8DBD5003D2357 /* CommentModel.swift in Sources */,
 				969A0D7C29A8C926003D2357 /* CommentsView.swift in Sources */,
+				96A7093929ABB49900CED8B0 /* ProfileHeaderView.swift in Sources */,
 				96A7093129AB3CD900CED8B0 /* UploadView.swift in Sources */,
 				96A7093329AB496B00CED8B0 /* ImagePicker.swift in Sources */,
 				969A0D8429A8E69A003D2357 /* CarouselView.swift in Sources */,
