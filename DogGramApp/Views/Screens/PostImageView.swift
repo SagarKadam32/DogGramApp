@@ -11,6 +11,7 @@ struct PostImageView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @State var captionText: String = ""
+    @Binding var imageSelected: UIImage
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
@@ -29,7 +30,7 @@ struct PostImageView: View {
             }
             
             ScrollView(.vertical, showsIndicators: false) {
-                Image("dog1")
+                Image(uiImage: imageSelected)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 200, height: 200, alignment: .center)
@@ -73,7 +74,9 @@ struct PostImageView: View {
 }
 
 struct PostImageView_Previews: PreviewProvider {
+    
+    @State static var image = UIImage(named: "dog1")!
     static var previews: some View {
-        PostImageView()
+        PostImageView(imageSelected: $image)
     }
 }
