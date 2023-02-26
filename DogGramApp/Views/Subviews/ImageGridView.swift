@@ -18,15 +18,9 @@ struct ImageGridView: View {
             alignment: .center,
             spacing: nil,
             pinnedViews: []) {
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-                Text("Placeholder")
-
+                ForEach(posts.dataArray, id: \.self) { post in
+                    PostView(post: post, showHeaderAndFooter: false)
+                  }
             }
     }
 }
