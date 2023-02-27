@@ -36,11 +36,41 @@ struct SettingsView: View {
                 
                 // MARK: SECTION-2: PROFILE
                 GroupBox(content: {
+                    SettingsRowView(leftIcon: "pencil", text: "Display Name", color: Color.MyTheme.purpuleColor)
+                    
+                    SettingsRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpuleColor)
+                    
+                    SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpuleColor)
+                    
+                    SettingsRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpuleColor)
                     
                 }, label: {
                     SettingsLabelView(labelText: "Profile", labelImage: "person.fill")
+                    
                 })
                 .padding()
+                
+                // MARK: SECTION-3: APPLICATION
+                GroupBox(content: {
+                    SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
+                    SettingsRowView(leftIcon: "folder.fill", text: "Terms and Conditions", color: Color.MyTheme.yellowColor)
+                    SettingsRowView(leftIcon: "globe", text: "DogGram Website", color: Color.MyTheme.yellowColor)
+                    
+                    
+                }, label: {
+                    SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
+                })
+                .padding()
+                
+                // MARK: SECTION-4 SIGN OFF
+                GroupBox {
+                    Text("DogGram was made with love. \n All Rights Reserved \n Cool App Inc. \n Copyright 2023 ❤️")
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                }
+                .padding()
+                .padding(.bottom, 80)
             }
             .navigationBarTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
