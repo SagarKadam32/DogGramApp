@@ -19,7 +19,7 @@ struct PostView: View {
             if showHeaderAndFooter {
                 HStack {
                     NavigationLink(destination: {
-                        ProfileView()
+                        ProfileView(isMyProfile: false, profileDisplayName: post.userName, profileUserID: post.userID)
                     }, label: {
                         Image("dog1")
                             .resizable()
