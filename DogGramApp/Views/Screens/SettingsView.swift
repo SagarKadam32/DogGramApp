@@ -14,7 +14,33 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                Text("Test")
+                
+                // MARK: SECTION-1: DOGGRAM
+                GroupBox(content: {
+                    HStack(alignment: .center, spacing: 10) {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80, height: 80, alignment: .center)
+                            .cornerRadius(12)
+                        
+                        Text("DogGram is the #1 app for posting pictures of your dog and sharing them across the world. We are dog-loving community and we're happy to have you!")
+                            .font(.footnote)
+                    }
+
+                }, label: {
+                    SettingsLabelView(labelText: "DogGram", labelImage: "dot.radiowaves.left.and.right")
+
+                })
+                .padding()
+                
+                // MARK: SECTION-2: PROFILE
+                GroupBox(content: {
+                    
+                }, label: {
+                    SettingsLabelView(labelText: "Profile", labelImage: "person.fill")
+                })
+                .padding()
             }
             .navigationBarTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
