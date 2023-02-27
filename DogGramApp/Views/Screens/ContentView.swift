@@ -31,8 +31,9 @@ struct ContentView: View {
                     Text("Upload")
                 }
             
-            Text("Screen 4")
-                .tabItem {
+            NavigationView{
+                ProfileView()
+            }.tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")
                 }
