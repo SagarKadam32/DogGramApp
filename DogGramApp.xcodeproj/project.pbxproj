@@ -28,6 +28,7 @@
 		96A7093529AB6DEC00CED8B0 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093429AB6DEC00CED8B0 /* PostImageView.swift */; };
 		96A7093729ABB1AF00CED8B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093629ABB1AF00CED8B0 /* ProfileView.swift */; };
 		96A7093929ABB49900CED8B0 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093829ABB49900CED8B0 /* ProfileHeaderView.swift */; };
+		96A7093B29AC83E400CED8B0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7093A29AC83E400CED8B0 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		96A7093429AB6DEC00CED8B0 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		96A7093629ABB1AF00CED8B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		96A7093829ABB49900CED8B0 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		96A7093A29AC83E400CED8B0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				96A7093029AB3CD900CED8B0 /* UploadView.swift */,
 				96A7093429AB6DEC00CED8B0 /* PostImageView.swift */,
 				96A7093629ABB1AF00CED8B0 /* ProfileView.swift */,
+				96A7093A29AC83E400CED8B0 /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				96A7093329AB496B00CED8B0 /* ImagePicker.swift in Sources */,
 				969A0D8429A8E69A003D2357 /* CarouselView.swift in Sources */,
 				9648C87129A7A1A2001E869B /* DogGramAppApp.swift in Sources */,
+				96A7093B29AC83E400CED8B0 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
