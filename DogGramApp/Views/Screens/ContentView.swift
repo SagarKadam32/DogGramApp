@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
             
             NavigationView{
-                ProfileView(isMyProfile: true, profileDisplayName: "My Profile", profileUserID: "")
+                ProfileView(profileDisplayName: "My Profile", showSettings: false, isMyProfile: true, profileUserID: "")
             }.tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")

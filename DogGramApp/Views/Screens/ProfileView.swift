@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    var isMyProfile: Bool
     @State var profileDisplayName: String
+    @State var showSettings: Bool
+    
+    var isMyProfile: Bool
     var profileUserID: String
     
     var posts = PostArrayObject()
@@ -25,7 +27,9 @@ struct ProfileView: View {
         .navigationBarItems(
             trailing:
                     Button(
-                        action: {},
+                        action: {
+                            showSettings.toggle()
+                        },
                         label: {
                             Image(systemName: "line.horizontal.3")
             
@@ -34,6 +38,9 @@ struct ProfileView: View {
                     .opacity(isMyProfile ? 1.0 : 0.0)
             
         )
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
+        }
 
         
     }
@@ -42,7 +49,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ProfileView(isMyProfile: true, profileDisplayName: "Sega" , profileUserID: "")
+            ProfileView(profileDisplayName: "My Profile", showSettings: false, isMyProfile: true, profileUserID: "")
         }
     }
 }

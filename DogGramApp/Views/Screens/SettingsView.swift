@@ -68,7 +68,7 @@ struct SettingsView: View {
                 GroupBox(content: {
                     
                     Button(action: {
-                        openCustomURL(urlString: "httts://www.google.com")
+                        openCustomURL(urlString: "https://www.google.com")
                     }, label: {
                         SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
                     })
