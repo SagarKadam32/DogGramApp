@@ -49,7 +49,12 @@ struct SettingsView: View {
                         SettingsRowView(leftIcon: "text.quote", text: "Bio", color: Color.MyTheme.purpuleColor)
                     })
                     
-                    SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpuleColor)
+                    NavigationLink(destination: {
+                        SettingsEditImageView(title: "Profile Picture", description: "Your profile picture will be shown on your profile and your posts. Most user make it an image of themselves or of their dog!", selectedImage: UIImage(named: "dog1")!)
+                    }, label: {
+                        SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpuleColor)
+                    })
+
                     
                     SettingsRowView(leftIcon: "figure.walk", text: "Sign Out", color: Color.MyTheme.purpuleColor)
                     
