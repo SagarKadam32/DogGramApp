@@ -66,11 +66,25 @@ struct SettingsView: View {
                 
                 // MARK: SECTION-3: APPLICATION
                 GroupBox(content: {
-                    SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "folder.fill", text: "Terms and Conditions", color: Color.MyTheme.yellowColor)
-                    SettingsRowView(leftIcon: "globe", text: "DogGram Website", color: Color.MyTheme.yellowColor)
                     
+                    Button(action: {
+                        openCustomURL(urlString: "httts://www.google.com")
+                    }, label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Privacy Policy", color: Color.MyTheme.yellowColor)
+                    })
                     
+                    Button(action: {
+                        openCustomURL(urlString: "https://www.yahoo.com")
+                    }, label: {
+                        SettingsRowView(leftIcon: "folder.fill", text: "Terms and Conditions", color: Color.MyTheme.yellowColor)
+                    })
+  
+                    Button(action: {
+                        openCustomURL(urlString: "https://www.bing.com")
+                    }, label: {
+                        SettingsRowView(leftIcon: "globe", text: "DogGram Website", color: Color.MyTheme.yellowColor)
+                    })
+                  
                 }, label: {
                     SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
                 })
@@ -97,6 +111,16 @@ struct SettingsView: View {
                                 })
                                     .accentColor(.primary)
             )
+        }
+    }
+    
+    // MARK: FUNCTIONS
+    
+    func openCustomURL(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
         }
     }
 }
