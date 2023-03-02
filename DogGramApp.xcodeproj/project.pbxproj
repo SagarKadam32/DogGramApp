@@ -37,6 +37,7 @@
 		96F80C9C29AF2E3500C313BB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F80C9B29AF2E3500C313BB /* OnboardingView.swift */; };
 		96F80C9E29AF47F800C313BB /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F80C9D29AF47F800C313BB /* SignInWithAppleButtonCustom.swift */; };
 		96F80CA029AF696200C313BB /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F80C9F29AF696200C313BB /* OnboardingViewPart2.swift */; };
+		96F80CA229B069B500C313BB /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F80CA129B069B500C313BB /* LikeAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		96F80C9B29AF2E3500C313BB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		96F80C9D29AF47F800C313BB /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
 		96F80C9F29AF696200C313BB /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
+		96F80CA129B069B500C313BB /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				96A7093C29AC8CCC00CED8B0 /* SettingsLabelView.swift */,
 				96A7093E29AC900300CED8B0 /* SettingsRowView.swift */,
 				96F80C9D29AF47F800C313BB /* SignInWithAppleButtonCustom.swift */,
+				96F80CA129B069B500C313BB /* LikeAnimationView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				969A0D7529A8882E003D2357 /* PostView.swift in Sources */,
 				96A7093729ABB1AF00CED8B0 /* ProfileView.swift in Sources */,
 				969A0D8229A8E5D5003D2357 /* BrowseView.swift in Sources */,
+				96F80CA229B069B500C313BB /* LikeAnimationView.swift in Sources */,
 				969A0D8029A8DBD5003D2357 /* CommentModel.swift in Sources */,
 				964D9D1329ADD69A0063B526 /* SettingsEditImageView.swift in Sources */,
 				969A0D7C29A8C926003D2357 /* CommentsView.swift in Sources */,
