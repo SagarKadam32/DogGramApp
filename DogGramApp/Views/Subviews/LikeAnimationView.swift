@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LikeAnimationView: View {
-    @State var animate: Bool = false
+    @Binding var animate: Bool
     var body: some View {
         ZStack {
             Image(systemName: "heart.fill")
@@ -30,16 +30,14 @@ struct LikeAnimationView: View {
                 .scaleEffect(animate ? 1.0 : 0.5)
 
         }
-        .animation(Animation.easeInOut(duration: 0.5).repeatForever())
-        .onAppear() {
-            animate.toggle()
-        }
+        .animation(Animation.easeInOut(duration: 0.5))
     }
 }
 
 struct LikeAnimationView_Previews: PreviewProvider {
+    @State static var animate: Bool = false
     static var previews: some View {
-        LikeAnimationView()
+        LikeAnimationView(animate: $animate)
             .previewLayout(.sizeThatFits)
     }
 }
