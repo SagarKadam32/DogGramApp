@@ -12,6 +12,7 @@ struct PostView: View {
     @State var post: PostModel
     @State var animateLike: Bool = false
     @State var addHeartAnimationToView: Bool
+    @State var showActionSheet: Bool = false
     
     var showHeaderAndFooter: Bool
      
@@ -37,8 +38,18 @@ struct PostView: View {
                     })
                     
                     Spacer()
-                    Image(systemName: "ellipsis")
-                        .font(.headline)
+                    
+                    Button(action: {
+                        showActionSheet.toggle()
+                        
+                    }, label: {
+                        Image(systemName: "ellipsis")
+                            .font(.headline)
+                    })
+                    .actionSheet(isPresented: $showActionSheet, content: {
+                        getActionSheet()
+                    })
+
                 }
                 .padding(.all, 6)
             }
@@ -118,6 +129,18 @@ struct PostView: View {
         // Update the local data
         let updatedPost = PostModel(postID: post.postID, userID: post.userID, userName: post.userName, dataCreated: post.dataCreated, likeCount: post.likeCount - 1, likedByUser: false)
         self.post = updatedPost
+    }
+    
+    func getActionSheet() -> ActionSheet {
+        return ActionSheet(title: Text("What would you like to do?"), message: nil, buttons: [
+            .destructive(Text("Report"), action: {
+                print("REPORT")
+            }),
+            .default(Text("Learn More.."), action: {
+                print("LEARN MORE PRESSED")
+            }),
+            .cancel()
+        ])
     }
 }
 
