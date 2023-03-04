@@ -13,8 +13,14 @@ struct PostView: View {
     @State var animateLike: Bool = false
     @State var addHeartAnimationToView: Bool
     @State var showActionSheet: Bool = false
+    @State var actionSheetType: PostActionSheetActionOption = .general
     
     var showHeaderAndFooter: Bool
+    
+    enum PostActionSheetActionOption {
+        case general
+        case reporting
+    }
      
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -49,6 +55,7 @@ struct PostView: View {
                     .actionSheet(isPresented: $showActionSheet, content: {
                         getActionSheet()
                     })
+                    .accentColor(.primary)
 
                 }
                 .padding(.all, 6)
@@ -132,15 +139,46 @@ struct PostView: View {
     }
     
     func getActionSheet() -> ActionSheet {
-        return ActionSheet(title: Text("What would you like to do?"), message: nil, buttons: [
-            .destructive(Text("Report"), action: {
-                print("REPORT")
-            }),
-            .default(Text("Learn More.."), action: {
-                print("LEARN MORE PRESSED")
-            }),
-            .cancel()
-        ])
+        
+        switch actionSheetType {
+        case .general:
+            return ActionSheet(title: Text("What would you like to do?"), message: nil, buttons: [
+                .destructive(Text("Report"), action: {
+                    print("REPORT")
+                    self.actionSheetType = .reporting
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.showActionSheet.toggle()
+                    }
+                }),
+                .default(Text("Learn More.."), action: {
+                    print("LEARN MORE PRESSED")
+                }),
+                .cancel()
+            ])
+        case .reporting:
+            return ActionSheet(title: Text("Why are you reporting this post?"), message: nil, buttons: [
+                .destructive(Text("This is inapproprate"), action: {
+                    reportPost(reason: "This is inapproprate")
+                }),
+                .destructive(Text("This is Spam"), action: {
+                    reportPost(reason: "This is Spam")
+                }),
+                .destructive(Text("It made me uncomfortable"), action: {
+                    reportPost(reason: "It made me uncomfortable")
+                }),
+                .cancel({
+                    self.actionSheetType = .general
+                })
+            ])
+        }
+        
+        
+
+    }
+    
+    func reportPost(reason: String) {
+        print("Report Post Now..")
+        self.actionSheetType = .general
     }
 }
 
