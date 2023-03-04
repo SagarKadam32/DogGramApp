@@ -23,6 +23,7 @@ struct BrowseView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             BrowseView()
+                .preferredColorScheme(.dark)
         }
     }
 }

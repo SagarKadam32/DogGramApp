@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @State var profileDisplayName: String
     @State var showSettings: Bool
     
@@ -34,12 +35,14 @@ struct ProfileView: View {
                             Image(systemName: "line.horizontal.3")
             
                     })
-                    .accentColor(Color.MyTheme.purpuleColor)
+                    .accentColor(colorScheme == .light ? Color.MyTheme.purpuleColor : Color.MyTheme.yellowColor)
                     .opacity(isMyProfile ? 1.0 : 0.0)
             
         )
         .sheet(isPresented: $showSettings) {
             SettingsView()
+                .preferredColorScheme(colorScheme)
+                .accentColor(colorScheme == .light ? Color.MyTheme.purpuleColor : Color.MyTheme.yellowColor)
         }
 
         
@@ -50,6 +53,7 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ProfileView(profileDisplayName: "My Profile", showSettings: false, isMyProfile: true, profileUserID: "")
+                .preferredColorScheme(.dark)
         }
     }
 }

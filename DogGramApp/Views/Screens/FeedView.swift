@@ -30,6 +30,7 @@ struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             FeedView(post: PostArrayObject(), title: "Feed View")
+                .preferredColorScheme(.dark)
         }
     }
 }

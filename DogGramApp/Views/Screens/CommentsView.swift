@@ -12,6 +12,8 @@ struct CommentsView: View {
     @State var submissionText: String = ""
     @State var commentsArray = [CommentsModel]()
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -37,10 +39,11 @@ struct CommentsView: View {
                     Image(systemName: "paperplane.fill")
                         .font(.title2)
                 })
-                .accentColor(Color.MyTheme.purpuleColor)
+                .accentColor(colorScheme == .light ? Color.MyTheme.purpuleColor : Color.MyTheme.yellowColor)
             }
             .padding(.all, 6)
         }
+        .padding(.horizontal)
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Comments")
         .onAppear {
@@ -73,6 +76,8 @@ struct CommentsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             CommentsView()
+                .preferredColorScheme(.dark)
+
         }
     }
 }

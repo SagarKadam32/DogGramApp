@@ -68,5 +68,7 @@ struct OnboardingViewPart2: View {
 struct OnboardingViewPart2_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingViewPart2()
+            .preferredColorScheme(.dark)
+
     }
 }

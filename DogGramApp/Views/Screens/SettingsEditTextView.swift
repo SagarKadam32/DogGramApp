@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsEditTextView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State var submissionText: String = ""
     @State var title: String
     @State var description: String
@@ -24,11 +25,12 @@ struct SettingsEditTextView: View {
                 .padding()
                 .frame(height:60)
                 .frame(maxWidth:.infinity)
-                .background(Color.MyTheme.beigeColor)
+                .background(colorScheme == .light ? Color.MyTheme.beigeColor :  Color.MyTheme.purpuleColor)
                 .cornerRadius(12)
                 .font(.headline)
                 .autocapitalization(.sentences)
-            
+              
+       
             Button(action: {
                 
             }, label: {
@@ -38,10 +40,10 @@ struct SettingsEditTextView: View {
                     .padding()
                     .frame(height:60)
                     .frame(maxWidth:.infinity)
-                    .background(Color.MyTheme.purpuleColor)
+                    .background(colorScheme == .light ? Color.MyTheme.purpuleColor :  Color.MyTheme.yellowColor)
                     .cornerRadius(12)
             })
-            .accentColor(Color.MyTheme.yellowColor)
+            .accentColor(colorScheme == .light ? Color.MyTheme.yellowColor :  Color.MyTheme.purpuleColor)
             
             Spacer()
         }
@@ -56,6 +58,7 @@ struct SettingsEditTextView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             SettingsEditTextView(title: "Edit Display Text", description: "This is the description text so that we can tell user what they are doing on this screen", placeholder: "Placholder Text")
+                .preferredColorScheme(.dark)
         }
     }
 }

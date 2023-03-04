@@ -9,6 +9,8 @@ import SwiftUI
 
 struct UploadView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+
     @State var showImagePicker: Bool = false
     @State var imageSelected: UIImage = UIImage(named: "logo")!
     @State var sourceType: UIImagePickerController.SourceType = .camera
@@ -44,6 +46,8 @@ struct UploadView: View {
             }
             .sheet(isPresented: $showImagePicker, onDismiss: segueToPostImageView, content: {
                 ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
+                    .preferredColorScheme(colorScheme)
+                    .accentColor(colorScheme == .light ? Color.MyTheme.purpuleColor : Color.MyTheme.yellowColor)
 
             })
             
@@ -53,6 +57,8 @@ struct UploadView: View {
                 .frame(width: 100, height: 100, alignment: .center)
                 .fullScreenCover(isPresented: $showPostImageView) {
                     PostImageView(imageSelected: $imageSelected)
+                        .preferredColorScheme(colorScheme)
+                    
                 }
         }
         .edgesIgnoringSafeArea(.top)
@@ -69,5 +75,6 @@ struct UploadView: View {
 struct UploadView_Previews: PreviewProvider {
     static var previews: some View {
         UploadView()
+            .preferredColorScheme(.dark)
     }
 }

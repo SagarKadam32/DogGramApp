@@ -73,6 +73,7 @@ struct SettingsEditImageView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             SettingsEditImageView(title: "Title", description: "Description", selectedImage: UIImage(named: "dog1")!)
+                .preferredColorScheme(.dark)
         }
     }
 }
